@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - trendBaaZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CollectionProducts.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>trendBaaZ</h1>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="Collection.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sale is LIVE</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">New Trending</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">New Arrivals</a></li>
+                <li class="nav-item dropdown">
+                    <a href="Collection.html" class="nav-link">Collections</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Collection.html#tshirt-section">T-shirt</a></li>
+                        <li><a href="Collection.html#polo-section">Polo Tshirt</a></li>
+                        <li><a href="Collection.html#hoodie-section">Hoodie</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Try searching...">
+                    <button class="search-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-4.23 6.5 6.5 0 10-6.5 6.5c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="nav-icons">
+                    <a href="#" class="icon wishlist-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        <span class="count-badge wishlist-count"></span>
+                    </a>
+                    <a href="#" class="icon cart-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0020 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                        <span class="count-badge cart-count"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="product-details-section">
+        <div class="product-details-container">
+            <div class="product-image-gallery">
+                <img id="mainProductImage" src="" alt="Product Image">
+                <button class="gallery-arrow previous-btn" aria-label="Previous Image">‹</button>
+                <button class="gallery-arrow next-btn" aria-label="Next Image">›</button>
+                <div class="thumbnail-gallery" id="thumbnailContainer">
+                    <!-- Thumbnails will be dynamically loaded here by JS -->
+                </div>
+            </div>
+            <div class="product-info-main">
+                <div class="product-header">
+                    <div class="price-rating">
+                        <div class="product-price-info">
+                            <span id="productPrice" class="price"></span>
+                            <span id="productOriginalPrice" class="original-price"></span>
+                            <span id="productDiscount" class="discount"></span>
+                        </div>
+                        <p class="rating">⭐ <span id="productRating"></span></p>
+                    </div>
+                    <p id="productName" class="product-title"></p>
+                    <button class="share-icon" aria-label="Share">
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.52.48 1.2.77 1.96.77 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L7.05 11.2c-.52-.48-1.2-.77-1.96-.77-1.66 0-3 1.34-3 3s1.34 3 3 3c.76 0 1.44-.3 1.96-.77l7.05 4.11c-.05.23-.09.46-.09.7 0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </button>
+                </div>
+
+                <h3 class="section-title">OFFERS</h3>
+                <div class="offers-section">
+                    <div class="offer-card">
+                        <div class="offer-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#2ecc71" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </div>
+                        <div class="offer-content">
+                            <p class="offer-text">Get it for as low as <span class="offer-price">₹399</span> <span class="original-offer-price">₹549</span></p>
+                            <p class="offer-details">Pick any 3 Oversized Printed T-shirts @1199 Add 3 products in your cart to avail the offer</p>
+                            <p class="offer-terms">Offer will be auto-applied <a href="#" class="offer-t-c">OFFER T&C</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-selection">
+                    <h3>SELECT COLOR</h3>
+                    <div class="color-options">
+                        <div class="color-option active" data-color="default" title="Default Color">
+                            <img src="https://placehold.co/80x80/0a0a0a/FFFFFF?text=Default" alt="Default Color">
+                        </div>
+                        <div class="color-option" data-color="black" title="Black">
+                            <img src="https://placehold.co/80x80/000000/FFFFFF?text=Black" alt="Black Color">
+                        </div>
+                        <div class="color-option" data-color="white" title="White">
+                            <img src="https://placehold.co/80x80/FFFFFF/000000?text=White" alt="White Color">
+                        </div>
+                        <!-- Add more color options here as needed -->
+                    </div>
+                </div>
+
+                <div class="size-selection">
+                    <div class="size-header">
+                        <h3>SELECT SIZE</h3>
+                        <a href="#" class="size-guide-link">SIZE GUIDE</a>
+                    </div>
+                    <div class="size-buttons">
+                        <button class="size-btn" data-size="S">S</button>
+                        <button class="size-btn" data-size="M">M</button>
+                        <button class="size-btn" data-size="L">L</button>
+                        <button class="size-btn" data-size="XL">XL</button>
+                        <button class="size-btn" data-size="XXL">XXL</button>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="wishlist-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        WISHLIST
+                    </button>
+                    <button class="add-to-cart-btn">ADD TO CART</button>
+                </div>
+
+                <div class="product-accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-icon">📄</span>
+                            Product Description
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p id="productDescription"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customer-reviews reviews-section">
+            <h3 class="section-title">CUSTOMER REVIEWS</h3>
+            <div class="review-summary">
+                <div class="overall-rating">
+                    <span class="stars">⭐ <span id="overallRating">N/A</span></span>
+                    <span id="totalReviews" class="review-count">0 reviews</span>
+                </div>
+                <button class="write-review-btn">Write a Review</button>
+            </div>
+            <div class="review-sort">
+                <label for="sortReviews">Sort by:</label>
+                <select id="sortReviews">
+                    <option value="recent">Most Recent</option>
+                    <option value="highest">Highest Rated</option>
+                    <option value="lowest">Lowest Rated</option>
+                </select>
+            </div>
+            <div class="individual-reviews" id="reviewList">
+                <!-- Reviews will be dynamically loaded here by JS -->
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-column footer-brand">
+                <h2 class="footer-title">trendBaaZ</h2>
+                <p class="footer-description">Your ultimate destination for trendy and high-quality fashion. Shop now and elevate your style!</p>
+            </div>
+            <div class="footer-column footer-links">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul>
+                    <li><a href="Collection.html" class="footer-link">Home</a></li>
+                    <li><a href="Collection.html#tshirt-section" class="footer-link">T-shirts</a></li>
+                    <li><a href="Collection.html#hoodie-section" class="footer-link">Hoodies</a></li>
+                    <li><a href="Collection.html#polo-section" class="footer-link">Polo T-shirts</a></li>
+                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contact">
+                <h3 class="footer-title">Contact Us</h3>
+                <p>Email: support@trendbaaz.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Address: 123 Fashion St, Trend City, 560001</p>
+            </div>
+            <div class="footer-column footer-newsletter">
+                <div class="footer-title">📢Newsletter</div>
+                <p>Stay updated with the latest trends and exclusive offers!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email" class="newsletter-input">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-social">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07c1.332.067 2.163.292 2.87.546a4.998 4.998 0 013.111 3.111c.254.707.479 1.538.546 2.87.058 1.265.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.067 1.332-.292 2.163-.546 2.87a4.998 4.998 0 01-3.111 3.111c-.707.254-1.538.479-2.87.546-1.265.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.332-.067-2.163-.292-2.87-.546a4.998 4.998 0 01-3.111-3.111c-.254-.707-.479-1.538-.546-2.87-.058-1.265-.07-1.646-.07-4.85s.012-3.584.07-4.85c.067-1.332.292-2.163.546-2.87a4.998 4.998 0 013.111-3.111c.707-.254 1.538-.479 2.87-.546C8.416 2.175 8.796 2.163 12 2.163zm0 3.84a6 6 0 100 12 6 6 0 000-12zm0 1.95a4.05 4.05 0 110 8.1 4.05 4.05 0 010-8.1z"/></svg></a>
+                <a href="#" class="social-icon"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M22.46 6c-.84.37-1.74.62-2.67.73.96-.58 1.7-1.5 2.05-2.61-.9.53-1.89.92-2.93 1.13c-.85-.91-2.06-1.48-3.38-1.48-2.57 0-4.66 2.09-4.66 4.66 0 .36.04.7.11 1.03-3.87-.19-7.3-2.05-9.6-4.87-.4 2.07-.2 3.98.64 5.1-.79-.02-1.53-.24-2.18-.62v.06c0 2.27 1.62 4.16 3.76 4.59-.39.1-.8.15-1.23.15-.3 0-.59-.03-.87-.08.6 1.86 2.34 3.2 4.39 3.23-1.61 1.26-3.64 2.02-5.83 2.02-.38 0-.76-.02-1.13-.07 2.08 1.34 4.56 2.13 7.23 2.13C16.5 20.33 22 14.86 22 9.21c0-.18-.01-.35-.02-.52.96-.69 1.79-1.56 2.45-2.55z"/></svg></a>
+                <a href="#" class="social-icon"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 13H9v-6h2v6zm0 4h2v2h-2z"/></svg></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 trendBaaZ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="CollectionProducts.js"></script>
+</body>
+</html>
