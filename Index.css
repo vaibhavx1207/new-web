@@ -624,12 +624,17 @@ html {
     margin: 0;
     padding: 0;
     display: block;
-    }
-    .banner-section img {
+    position: relative;
+}
+
+.banner-section img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 }
+
+    
 
 
     .trending-title {
@@ -1177,4 +1182,5 @@ html {
     color: #e0e0e0;
 
 }
+
 
