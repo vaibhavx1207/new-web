@@ -620,11 +620,21 @@ html {
     }
 
     .banner-section {
-        height: 400px;
-        width: 100vw;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+.banner-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 
     .trending-title {
         font-size: 24px;
@@ -2342,3 +2352,4 @@ html {
     color: #e0e0e0;
 >>>>>>> a47803d (Added trend folder with website files)
 }
+
