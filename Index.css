@@ -618,21 +618,15 @@ html {
         width: 120px;
     }
 
-    .banner-section {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    display: block;
-    position: relative;
+  
+
+.banner-section {
+    height: 400px;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.banner-section img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
 
     
 
