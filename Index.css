@@ -619,11 +619,13 @@ html {
     }
 
     .banner-section {
-        height: 400px;
-        width: 100vw;
-        left: 50%;
-        transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
     }
+
 
     .trending-title {
         font-size: 24px;
@@ -1168,4 +1170,5 @@ html {
 .name {
     text-decoration: none;
     color: #e0e0e0;
+
 }
